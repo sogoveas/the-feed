@@ -1,0 +1,192 @@
+.license-plate {
+  width: 260px;
+  height: 90px;
+  margin: 0 auto; 
+  background: linear-gradient(to bottom, #ffffff, rgb(191, 192, 217));
+  border: 4px solid rgb(89, 39, 39);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px lch(0% 0 0 / 0.3);
+  text-align: center;
+}
+
+.state {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: HuLi-Regular, sans-serif;
+  color: rgb(89, 39, 39);
+  text-shadow: 1px 1px 0 #fff;
+  margin-bottom: 8px;
+}
+
+.plate-number {
+  font-size: 25px;
+  font-family: HuLi-Regular, sans-serif;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+    
+.nav-bar {
+    background-color: rgb(69, 66, 89);
+    text-align: center;
+    padding: 25px 0 0 35px;
+    word-spacing: 80px;
+    font-family: 'Flowers Kingdom';
+    font-size: 13px;
+    height: 27px;
+}
+
+.nav-bar a.active {
+  color: rgb(89, 39, 39);
+  font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-style: oblique;
+    color: rgb(191, 192, 217);
+}
+
+body {
+    background-color: rgb(191, 192, 217);
+    font-family: 'L';
+    color: rgb(88, 2, 88);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Flowers Kingdom';
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Tropi Land';
+    margin-top: 30px;
+    align-items: center;
+}
+
+.photo-strips {
+  display: flex;
+  justify-content: center;
+  gap: 50px; 
+}
+
+.strip {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.strip .polaroid {
+  background: none;
+  padding: 0; 
+  border: none;
+  margin: 0;
+  width: 220px;
+}
+
+.strip .polaroid img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row img {
+  width: 250px; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.paragraph-wrapper {
+    max-width: 60%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.paragraph-wrapper p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.polaroid {
+    background: #ffffff;
+    padding: 10px 10px 25px 10px; 
+    max-width: 250px;
+}
+
+.polaroid img {
+    width: 100%;
+    display: block;
+}
+
+.polaroid:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.4);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-family: 'DK Cool Crayon', sans-serif; 
+}
+
+.back a {
+  display: flex;
+  color: rgb(89, 39, 39); 
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+@font-face {
+    font-family: 'Flowers Kingdom';
+    src: url('fonts/Flowers Kingdom.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tropi Land';
+    src: url('fonts/Tropi Land - (Demo) hanscostudio.com.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HuLi-Regular';
+    src: url('fonts/HuLi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'F25 Bank Printer';
+    src: url('fonts/HuLi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DK Cool Crayon';
+  src: url('fonts/DK Cool Crayon.ttf') format('truetype');
+}
