@@ -44,6 +44,11 @@
 .nav-bar a.active {
   color: rgb(89, 39, 39);
   font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 white, 
+    1px -1px 0 white,  
+    -1px 1px 0 white,  
+    1px 1px 0 white;  
 }
 
 a {
