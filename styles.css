@@ -1,44 +1,88 @@
 .license-plate {
-  width: 260px;
-  height: 90px;
-  margin: 0 auto; 
-  background: linear-gradient(to bottom, #ffffff, rgb(191, 192, 217));
-  border: 4px solid rgb(89, 39, 39);
-  border-radius: 12px;
+  width: 400px;
+  height: 120px;
+  margin: 40px auto 20px;
+  background: linear-gradient(145deg, #e8e8e8 0%, #c9c9c9 50%, #f4f4f4 100%);
+  border-radius: 10px;
+  box-shadow: 
+    inset 0 0 8px rgba(0, 0, 0, 0.2),
+    3px 3px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  box-shadow: 2px 2px 10px lch(0% 0 0 / 0.3);
+  font-family: 'F25 Bank Printer', monospace;
   text-align: center;
+  letter-spacing: 3px;
+  position: relative;
 }
 
 .state {
-  font-size: 15px;
-  font-weight: bold;
-  font-family: HuLi-Regular, sans-serif;
-  color: rgb(89, 39, 39);
-  text-shadow: 1px 1px 0 #fff;
-  margin-bottom: 8px;
+  font-family: 'RAGE';
+  font-size: 30px;
+  font-weight: bolder;
+  color: #800000;
+  letter-spacing: 2px;
+  margin-top: 8px;
 }
 
 .plate-number {
-  font-size: 25px;
-  font-family: HuLi-Regular, sans-serif;
+  font-size: 45px;
   font-weight: bold;
-  color: black;
-  letter-spacing: 5px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  color: #220745;
+  letter-spacing: 8px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
-    
+
+.month, .year {
+  position: absolute;
+  font-family: 'Times New Roman';
+  font-size: 14px;
+  font-weight: bold;
+  color: #800000;
+  padding: 4px 8px;
+  letter-spacing: 1.5px;
+  top: 12px;
+}
+
+.month {
+  left: 12px;
+}
+
+.year {
+  right: 12px;
+}
+
+.license-plate::before,
+.license-plate::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #999;
+  border-radius: 50%;
+  top: 10px;
+}
+
+.license-plate::before {
+  left: 10px;
+}
+
+.license-plate::after {
+  right: 10px;
+}
+
+
 .nav-bar {
-    background-color: rgb(69, 66, 89);
+   background-color: rgb(69, 66, 89);
     text-align: center;
     padding: 25px 0 0 35px;
-    word-spacing: 80px;
     font-family: 'Flowers Kingdom';
     font-size: 13px;
     height: 27px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
 
 .nav-bar a.active {
@@ -53,14 +97,13 @@
 
 a {
     text-decoration: none;
-    font-style: oblique;
     color: rgb(191, 192, 217);
 }
 
 body {
     background-color: rgb(191, 192, 217);
-    font-family: 'L';
     color: rgb(88, 2, 88);
+    font-size: 20px;
 }
 
 h1 {
@@ -91,6 +134,15 @@ h2 {
   align-items: center;
   background: white;
   padding: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.strip-row {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  background: white;
   border: 2px solid #ffffff;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
@@ -182,11 +234,6 @@ h2 {
 }
 
 @font-face {
-    font-family: 'HuLi-Regular';
-    src: url('fonts/HuLi-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'F25 Bank Printer';
     src: url('fonts/HuLi-Regular.ttf') format('truetype');
 }
@@ -194,4 +241,9 @@ h2 {
 @font-face {
   font-family: 'DK Cool Crayon';
   src: url('fonts/DK Cool Crayon.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RAGE';
+  src: url('fonts/RAGE_1.TTF') format('truetype');
 }
